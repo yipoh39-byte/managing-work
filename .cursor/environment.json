@@ -1,0 +1,12 @@
+{
+  "name": "Managing work and Juice Shop",
+  "user": "ubuntu",
+  "install": "if [ -f .cursor/install.sh ]; then exec bash .cursor/install.sh; fi\nif [ -f repos/managing-work/.cursor/install.sh ]; then exec bash repos/managing-work/.cursor/install.sh; fi\necho \"Could not find .cursor/install.sh\" >&2\nexit 1",
+  "start": "if [ -f .cursor/start.sh ]; then exec bash .cursor/start.sh; fi\nif [ -f repos/managing-work/.cursor/start.sh ]; then exec bash repos/managing-work/.cursor/start.sh; fi\necho \"Could not find .cursor/start.sh\" >&2\nexit 1",
+  "ports": [
+    {
+      "name": "juice-shop",
+      "port": 3000
+    }
+  ]
+}
